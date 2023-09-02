@@ -1,0 +1,30 @@
+para hacer potenciacion ------> "const exp = Math.pow(4,3)" o "const expES7 = 4**3"
+ver si un elemento esta incluido en un array -------> "NOMBRE_DEL_ARRAY.includes(VALOR)"
+
+convertir objeto a array ------> "Object.entries(objeto)" + metodo ".map()"
+convertir de array a objeto --------> "Object.fromEntries(objetoMod)"
+
+Hay una función que se hereda de un objeto que es assing (Object.assing({objeto},{nuevos valores})) que sirve para lo mismo.
+
+rest es el opuesto a spread pero se declara igual con "..." (su funcion cambia con el contexto en el que este colocado, "spread" separa los valores, rest "agrupa")
+
+ejRest:
+    const obj = {
+        firstname:"Juan",
+        lastname:"Dominguéz"
+    }
+    const newobj = {...obj, id:23, course:js}
+
+    const {firstname, lastname, ...otros} = newObj;
+    console.log(otros) --------------------------------> muestra en consola: {id:23, course:js}
+
+
+sring.trim() ------> elimina caracteres innecesarios como espacios vacios.
+Ej:
+    const text = '    hola    '
+    console.log(text.length) ---------> 12
+    console.log(text.trim().length) --------> 4
+
+NOMBRE_DEL_ARRAY.flat() -------> elimina arreglos dentro de el arreglo principal
+
+
